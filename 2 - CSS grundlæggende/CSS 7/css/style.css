@@ -1,0 +1,70 @@
+body {
+    background-color: hsl(194, 100%, 31%);
+}
+.container {
+    max-width: 1000px;
+    padding: 50px 0;
+    color: #ddd;
+}
+.answer span {
+    color: lightgreen;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+p {
+    color: #ccc;
+}
+nav li {
+    display:inline-block;
+    padding: 0px 20px 0px;
+}
+a:link {
+    color: hsl(194, 100%, 70%);
+}
+a:active {
+    color: hsl(194, 100%, 70%);
+}
+a:visited {
+    color: hsl(194, 100%, 70%);
+}
+.t1 {
+    width: 500px;
+    background-color: hsl(194, 100%, 31%);
+    border-style: 2px solid white;
+    border-collapse: collapse;
+}
+.t2 {
+    width: 500px;
+    background-color: hsl(194, 100%, 31%);
+    border-style: 2px solid white;
+    border-collapse: collapse;
+}
+.t2 .male {
+    display: none;
+}
+tr, th, td {
+    border: 2px solid white;
+    border-collapse: collapse;
+    padding: 6px;
+    font-family:cursive;
+    font-style: italic;
+}
+th {
+    background-color: hsl(194, 100%, 31%);
+    color: white;
+    padding: 6px;
+}
+tr:nth-child(even) {
+    background-color: #ddd;
+    color:red;
+}
+tr:nth-child(odd) {
+    background-color: #bbb;
+    color:green;
+}
+tr:hover {
+    background-color: yellow;
+}

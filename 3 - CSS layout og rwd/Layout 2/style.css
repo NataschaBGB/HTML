@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body {
+    background-color: hsl(212, 29%, 19%);
+}
+.container {
+    max-width: 1200px;
+    margin:auto;
+    background-color: hsl(211, 36%, 84%);
+    border-radius: 5px;
+    border: 2px solid hsl(39, 100%, 50%);
+}
+header {
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+    font-family: 'Slabo 27px';
+    font-weight: 600;
+    padding: 50px 0px;
+}
+nav {
+    background-color: hsl(212, 29%, 19%);
+    padding: 10px 0px 60px 0px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+nav a {
+    color: hsl(212, 29%, 79%);
+    margin: 0px 60px;
+    font-size: 18px;
+    font-family: 'Open Sans';
+}
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    color:cyan;
+}
+main {
+    display: flex;
+    justify-content:space-evenly;
+    font-family: 'Open Sans';
+}
+main > .textbox {
+    margin: 20px;
+}
+p {
+    max-width: 55ch;
+}
+hr {
+    border: 5px solid rosybrown;
+}
+footer {
+    font-size: 30px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0px 20px 0px;
+}

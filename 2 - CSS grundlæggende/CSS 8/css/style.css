@@ -1,0 +1,62 @@
+.one {
+    position: relative;
+    z-index:4;
+}
+img:hover {
+    z-index: 6;
+}
+.two {
+    position: absolute;
+    top: 35px;
+    left: 40px;
+    z-index: 3;
+}
+.three {
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    z-index: 2;
+}
+.four {
+    position: absolute;
+    top: 105px;
+    left: 105px;
+    z-index: 1;
+}
+.five {
+    position: absolute;
+    top: 135px;
+    left: 135px;
+    z-index: 0;
+}
+h4 {
+    background-color: hsla(39, 100%, 50%, 0.7) ;
+    color: purple;
+    position:absolute;
+    top: 135px;
+    left: 60px;
+    padding: 10px;
+    font-size: 50px;
+    z-index: 5;
+}
+.mother {
+    position: relative;
+    margin-top: 300px;
+    height: 200px;
+    width: 200px;
+    max-width: 100%;
+    max-height: 100%;
+}
+.mother img.image-hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
+}
+.mother:hover img.image-hover {
+    opacity: 1;
+}

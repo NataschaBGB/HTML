@@ -1,0 +1,17 @@
+h4 {
+    text-align: center;
+}
+
+table, tr, th, td {
+    color:seashell;
+    width: 500px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-collapse: collapse;
+    
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}

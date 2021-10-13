@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS opgave 4</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+    <style>
+        @font-face {
+            font-family: MyFirstFont;
+            src: url(AlexBrush-Regular.ttf);
+        }
+        @font-face {
+            font-family: MySecondFont;
+            src: url(ChunkFive-Regular.otf);
+        }
+        html {
+            font-size: 62.5%;
+        }
+        body {
+            line-height: 140%;
+            font-size: 1.1rem;
+        }
+        .google {
+            text-align: center;
+            font-size: 1.8rem;
+            font-family: "Roboto", sans-serif;
+        }
+        .custom {
+            font-family: MyFirstFont;
+            text-align: center;
+            font-size: 1.8rem;
+        }
+        .typography {
+            font-family: MySecondFont;
+            font-size: 1.8rem;
+            text-align: center;
+            background-color:lavender;
+            color:darkred;
+        }
+        p.a, p.b {
+            font-size: 1rem;
+            text-align: left;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .link {
+            background:red;
+            border-style: solid;
+            border-color: red;
+            background-color:red;
+            padding-left:20px;
+            padding-right:20px;
+            padding-bottom:6px;
+            padding-top:6px;
+            border-style:double;
+            border-color:black;
+            font-family: Impact, 'Arial Narrow Bold', sans-serif;
+            font-size: 20px;
+            transition: all 1s;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+            color:ghostwhite;
+        }
+        a:hover {
+            text-decoration: underline;
+            color:black;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 30px;
+        }
+        a:active {
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <h3 class="google">Google font</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt et quos iste ratione eius quasi, totam quidem vitae! A, voluptate quibusdam nulla quo expedita eum vero aperiam! Cum, dolore doloremque.</p>
+    <hr>
+    <h3 class="custom">Custom font / @font-face</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt et quos iste ratione eius quasi, totam quidem vitae! A, voluptate quibusdam nulla quo expedita eum vero aperiam! Cum, dolore doloremque.</p>
+    <hr>
+    <div class="typography">
+        <h3>Typografi</h3>
+        <p class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt et quos iste ratione eius quasi, totam quidem vitae! A, voluptate quibusdam nulla quo expedita eum vero aperiam! Cum, dolore doloremque.</p>
+        <p class="b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dignissimos cum ab commodi error quasi maiores, doloremque suscipit nulla, cupiditate porro dolorem delectus rem. Rem aspernatur asperiores consequuntur iste ratione?</p>
+    </div>
+    <hr><br>
+    <a class="link" href="https://www.webfx.com/blog/web-design/css-typography-01/" target="_blank">Læs mere om typografi her</a>
+</body>
+</html>

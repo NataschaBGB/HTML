@@ -1,0 +1,24 @@
+* {
+    font-weight: bold;
+}
+#main {
+    font-size: 30px;
+    color: orange;
+}
+.question {
+    font-size: 18px;
+    color: lightseagreen;
+}
+.answer {
+    font-size: 18px;
+    color: lightslategray;
+}
+table {
+    width: 600px;
+}
+table, th, tr, td {
+    
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+} 

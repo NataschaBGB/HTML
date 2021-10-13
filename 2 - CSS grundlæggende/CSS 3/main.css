@@ -1,0 +1,43 @@
+body {
+    background:url(flower.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.one {
+    background:url(pear.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: purple;
+}
+.two {
+    background:url(pear.png);
+    background-repeat: repeat;
+    background-color: purple;
+}
+.three {
+    background:url(pear.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: purple;
+}
+.four {
+    background:url(pear.png);
+    background-repeat: repeat;
+    background-size: cover;
+    background-color: purple;
+}
+h2 {
+    color: white;
+}
+h3 {
+    color: white;
+    background: black;
+}
+.box {
+    background:url(pear.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    background-position: center;
+}
