@@ -4,9 +4,9 @@ html {
     font-size: 1rem;
     font-size: clamp(0.95rem, 1rem, 1.25rem);
 }
-.container {
-    max-width: 1200px;
-    margin: auto;
+body {
+    margin: 0px 20px;
+    background-color:cornsilk;
 }
 .topbar {
     display: flex;
@@ -55,6 +55,8 @@ hr {
     border: none;
 }
 nav {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: center;
     font-family: 'PT Sans';
@@ -62,6 +64,8 @@ nav {
     flex-wrap: wrap;
     box-shadow: 2px 5px 6px lightgray;
     text-transform: capitalize;
+    background-color: white;
+    z-index: 1;
 }
 nav a {
     margin: 10px 0px 10px 0px;
@@ -106,32 +110,53 @@ nav .searchbar {
     transition: 0.2s;
 }
 .mainpage {
+    z-index: -1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 3rem;
     max-width: 1200px;
-    background-color: hsl(36, 19%, 95%);
-    margin: auto;
-    padding: 5%;
+    background-color:cornsilk;
+    margin: 40px auto;
+    overflow: hidden;
+    padding: 10px 0px;
 }
 .item {
+    position: relative;
     width: 300px;
     background-color: hsl(0, 0%, 91%);
     border-radius: 20px;
     text-align: center;
     overflow: hidden;
+    box-shadow: 2px 2px 2px lightgray;
+    
 }
-.item:hover {
+.item .beer:hover {
     overflow: hidden;
 }
-.mainpage img {
-    border-radius: 20px;
+.item .beer {
     transition: transform 0.5s;
     padding: 20px 10px 0px 10px;
     transform: scale(1.1);
 }
-.mainpage img:hover {
+.eco {
+    position: absolute;
+    top: 10px;
+    right: 240px;
+    width: 50px;
+}
+.like {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+}
+.like:hover {
+    border: 1px solid red;
+    border-radius: 50%;
+    background-color: red;
+}
+.mainpage .beer:hover {
     transform: scale(1.3);
     transition: 0.5s;
 }
@@ -178,4 +203,87 @@ nav .searchbar {
     border-bottom-left-radius: 20px;
     text-align: center;
     padding-left: 10px;
+}
+footer {
+    max-width: 1200px;
+    margin: auto;
+}
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0rem 6rem;
+}
+.info h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+.info ul {
+    list-style: none;
+}
+.info li {
+    margin: 10px 0px;
+}
+.info a {
+    color: black;
+    text-decoration: none;
+}
+.SoMe {
+    border-left: 1px solid hsl(0, 0%, 93%);
+    padding-left: 50px;
+    
+}
+.SoMe p {
+    margin:5px;
+}
+.SoMe img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+.contact p {
+    margin: 100px 0px;
+    float: left;
+}
+.payment img {
+    margin: 100px 0px;
+    float: right;
+}
+.botline {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    bottom: 0;
+}
+.getstarted {
+    padding: 20px;
+    background-color: hsl(166, 92%, 26%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.getstarted a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+.getstarted:hover {
+    text-decoration: underline;
+    background-color: hsl(166, 92%, 30%);
+}
+.helpchat {
+    padding: 20px;
+    background-color: hsl(166, 92%, 26%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.helpchat a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+.helpchat:hover {
+    text-decoration: underline;
+    background-color: hsl(166, 92%, 30%);
 }
