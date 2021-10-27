@@ -1,3 +1,165 @@
 body {
-    background-image: url("Subtle-Stripes.svg");
+    background-image: url(img/Subtle-Stripes.svg);
+    margin: 0;
+}
+.topbar {
+    background-color: black;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.topcontainer {
+    flex-wrap: wrap;
+    max-width: 1200px;
+    display: flex;
+    justify-content:space-evenly;
+    background-color: black;
+    margin: auto;
+    align-items: center;
+}
+.topbar .links {
+    display: flex;
+    gap: 0px 160px;
+    flex-wrap: wrap;
+}
+.topbar a {
+    color: hsl(39, 100%, 59%);
+    text-decoration: none;
+}
+.topbar a:hover {
+    color: hsl(39, 100%, 79%);
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+.font-awesome {
+    display: flex;
+    gap:10px;
+}
+.font-awesome img {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 2px;
+    background-color: hsl(39, 100%, 59%);
+}
+header {
+    height: 400px;
+}
+header {
+    display: flex;
+    width: 97.9%;
+    background-image: url(img/header.jpg);
+    background-position-y: 70%;
+    background-size: cover;
+    padding: 20px;
+}
+.motto {
+    background: rgba(70, 70, 70, 0.5);
+    padding: 0px 20px;
+    height: 35%;
+}
+.motto h1 {
+    color: white;
+}
+.motto h2 {
+    color: orange;
+}
+main {
+    max-width: 1200px;
+    margin: 0px auto 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.item {
+    flex-basis:20%;
+    flex-grow: 1;
+    min-width: 250px;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    max-height: 800px;
+}
+.item:hover {
+    border: 1px solid red;
+}
+.item h1 {
+    text-align: center;
+    margin: 0;
+}
+.item .chair {
+    max-width: 100%;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.item .chair img:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    overflow: hidden;
+}
+.date {
+    color: grey;
+}
+.price p {
+    margin: 0;
+}
+.price {
+    padding: 10px 15px;
+    background-color: black;
+    color: orange;
+    float: left;
+    border-radius: 20px;
+}
+.itemcontainer {
+    margin: 10px;
+    background-color: beige;
+    padding: 10px;
+    flex-wrap: wrap;
+    max-width: 550px;
+}
+.moreinfo img {
+    width: 100%;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrapper {
+    margin:10px;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    background-color: beige;
+    padding: 10px;
+    max-width: 500px;
+}
+.buy {
+    display: flex;
+    flex-grow: 1;
+    font-size: 2rem;
+    justify-content: flex-end;
+    max-width: 250px;
+}
+.numberofitems {
+    font-size: 2rem;
+    max-width: 20%;
+    border: 2px solid lightblue;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+}
+.buy button {
+    flex-grow: 1;
+    font-size: 2rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color:lightblue;
+    border: none;
+    max-width: 80%;
+}
+.buy button:hover {
+    background-color: turquoise;
+    text-decoration: underline;
+    cursor: pointer;
 }

@@ -1,0 +1,53 @@
+.container {
+    width: 570px;
+    margin:auto;
+}
+.first {
+    display: flex;
+}
+.second {
+    display: flex;
+}
+.third {
+    display: flex;
+}
+.square {
+    display: flex;
+    width: 180px;
+    height: 180px;
+    background-color: #999;
+    margin: 5px;
+}
+.dot {
+    width: 60px;
+    height: 60px;
+    background-color: orange;
+}
+.first > .square:nth-child(2) {
+    justify-content: center;
+}
+.first > .square:last-child {
+    justify-content: flex-end;
+}
+.second > .square:first-child {
+    align-items: center;
+}
+.second > .square:nth-child(2) {
+    align-items: center;
+    justify-content: center;
+}
+.second > .square:last-child {
+    align-items: center;
+    justify-content: flex-end;
+}
+.third > .square:first-child {
+    align-items: flex-end;
+}
+.third > .square:nth-child(2) {
+    align-items: flex-end;
+    justify-content: center;
+}
+.third > .square:last-child {
+    align-items: flex-end;
+    justify-content: flex-end;
+}

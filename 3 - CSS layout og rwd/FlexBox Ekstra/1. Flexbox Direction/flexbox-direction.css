@@ -1,0 +1,78 @@
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.parent1 {
+    background-color: #ccc;
+    margin: 20px;
+    margin:0px;
+    display: flex;
+    flex-direction: row;
+}
+.parent2 {
+    background-color: #ccc;
+    margin: 20px;
+    margin:0px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.parent3 {
+    background-color: #ccc;
+    margin: 20px;
+    margin:0px;
+    display: flex;
+    flex-direction: column;
+}
+.parent4 {
+    background-color: #ccc;
+    margin: 20px;
+    margin:0px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.child:first-child {
+    background-color: red;
+    width: 100px;
+    padding: 10px;
+    color: #fff;
+    font-size: 42px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.child:nth-child(2) {
+    background-color: green;
+    width: 100px;
+    padding: 10px;
+    color: #fff;
+    font-size: 42px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.child:nth-child(3) {
+    background-color: blue;
+    width: 100px;
+    padding: 10px;
+    color: #fff;
+    font-size: 42px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.child:last-child {
+    background-color: orange;
+    width: 100px;
+    padding: 10px;
+    color: #fff;
+    font-size: 42px;
+    box-sizing: border-box;
+    text-align: center;
+}
