@@ -1,8 +1,4 @@
 @font-face {
-    font-family: 'Sofia Bold';
-    src: local('Sofia Pro Semi Bold'), url(Sofia_Pro/Sofia\ Pro\ Semi\ Bold\ Italic.otf) format('opentype');
-}
-@font-face {
     font-family: 'Sofia Regular';
     src: local('Sofia Pro Regular'), url(Sofia_Pro/Sofia\ Pro\ Regular.otf) format('opentype');
 }
@@ -29,6 +25,8 @@ header {
     font-size: 2rem;
     font-family: 'Sofia Light';
     margin-left: 40px;
+    margin-top: -20px;
+    margin-bottom: 20px;
     color: #28675b;
 }
 .topbar > .image {
@@ -36,11 +34,11 @@ header {
     margin-right: 40px;
 }
 .logo {
-    width: 100px;
+    width: 85px;
 }
 .headline {
     clear: both;
-    margin-left: 40px;
+    margin-left:40px;
 }
 .headline > h1 {
     font-size: 3rem;
@@ -59,7 +57,7 @@ main {
     justify-content:space-between;
 }
 .teachimg {
-    margin-top: 20px;
+    margin-top: 22px;
     margin-bottom: -3px;
     margin-right: 50px;
     object-fit:cover;
@@ -85,6 +83,6 @@ li:empty {
     display: none;
 }
 hr {
-    border: 1px dotted black;
+    border: 1px dotted lightgrey;
     margin:0;
 }

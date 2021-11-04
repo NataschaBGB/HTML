@@ -1,6 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@media screen and (max-width: 900px) {
+    nav {
+        width: 20%;
+        display: flex;
+    }
+    header {
+        max-height: 20vh;
+    }
+}
 body {
     background-image: url(img/Subtle-Stripes.svg);
     margin: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
 }
 .topbar {
     background-color: black;
@@ -10,22 +24,25 @@ body {
     z-index: 1;
 }
 .topcontainer {
-    flex-wrap: wrap;
-    max-width: 1200px;
     display: flex;
-    justify-content:space-evenly;
-    background-color: black;
-    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
 }
-.topbar .links {
+ul, li {
     display: flex;
-    gap: 0px 160px;
     flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    gap: 0px 100px;
+    font-family: 'Roboto';
+    font-weight: 400;
 }
-.topbar a {
+.menu li a {
+    display: flex;
     color: hsl(39, 100%, 59%);
     text-decoration: none;
+    padding: 10px;
 }
 .topbar a:hover {
     color: hsl(39, 100%, 79%);
@@ -48,45 +65,55 @@ header {
 }
 header {
     display: flex;
-    width: 97.9%;
+    width: 100%;
     background-image: url(img/header.jpg);
     background-position-y: 70%;
     background-size: cover;
-    padding: 20px;
 }
 .motto {
     background: rgba(70, 70, 70, 0.5);
     padding: 0px 20px;
-    height: 35%;
+    height: min-content;
+    width:auto;
+    margin: 20px 0px 0px 20px;
 }
 .motto h1 {
     color: white;
+    font-family: 'Roboto';
+    font-weight: 400;
 }
 .motto h2 {
     color: orange;
+    font-family: 'Roboto';
+    font-weight: 700;
 }
 main {
-    max-width: 1200px;
-    margin: 0px auto 60px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    font-family: 'Roboto';
 }
 .item {
+    position: relative;
     flex-basis:20%;
     flex-grow: 1;
     min-width: 250px;
     background-color: white;
     margin: 10px;
     padding: 10px;
-    max-height: 800px;
+    border: 1px solid transparent;
 }
 .item:hover {
-    border: 1px solid red;
+    border: 1px solid dimgrey;
 }
 .item h1 {
-    text-align: center;
     margin: 0;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 8%;
 }
 .item .chair {
     max-width: 100%;
@@ -101,15 +128,20 @@ main {
 .date {
     color: grey;
 }
-.price p {
-    margin: 0;
+.description {
+    font-weight: 700;
+    margin-bottom: 80px;
 }
 .price {
-    padding: 10px 15px;
+    position: absolute;
+    bottom: 10px;
+    float: left;
+    font-weight: 700;
+    padding: 0px 10px;
     background-color: black;
     color: orange;
-    float: left;
     border-radius: 20px;
+    text-align: center;
 }
 .itemcontainer {
     margin: 10px;
@@ -117,6 +149,8 @@ main {
     padding: 10px;
     flex-wrap: wrap;
     max-width: 550px;
+    flex-basis: 40%;
+    flex-grow: 1;
 }
 .moreinfo img {
     width: 100%;
@@ -125,7 +159,16 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
+.headline {
+    display: flex;
+    justify-content: space-between;
+}
+.headline > h2 {
+    margin-right:20px;
+}
 .wrapper {
+    flex-grow: 1;
+    flex-basis: 40%;
     margin:10px;
     display: flex;
     justify-content:center;
@@ -134,15 +177,18 @@ main {
     padding: 10px;
     max-width: 500px;
 }
+.levering {
+    margin:20px 0px;
+}
 .buy {
     display: flex;
-    flex-grow: 1;
-    font-size: 2rem;
-    justify-content: flex-end;
-    max-width: 250px;
+    justify-content: center;
+    width: 40%;
+    height: 6%;
+    margin: 10px;
 }
 .numberofitems {
-    font-size: 2rem;
+    font-size: 1.2em;
     max-width: 20%;
     border: 2px solid lightblue;
     border-top-left-radius: 20px;
@@ -150,16 +196,32 @@ main {
     text-align: center;
 }
 .buy button {
-    flex-grow: 1;
-    font-size: 2rem;
+    font-size: 1.2em;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color:lightblue;
     border: none;
-    max-width: 80%;
+    width: 40%;
 }
 .buy button:hover {
     background-color: turquoise;
     text-decoration: underline;
     cursor: pointer;
+}
+footer {
+    padding-bottom: 20px;
+    margin-top: 60px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    height: 10vh;
+    color:hsl(39, 100%, 59%);
+}
+.footername {
+    font-size: 20px;
+}
+.footeradress {
+    font-weight: 700;
+    margin:0;
 }
